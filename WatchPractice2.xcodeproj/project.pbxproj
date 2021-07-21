@@ -22,6 +22,8 @@
 		8F680FA826789A8500892907 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F680FA726789A8500892907 /* NotificationController.swift */; };
 		8F680FAA26789A8500892907 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F680FA926789A8500892907 /* ComplicationController.swift */; };
 		8F680FAC26789A8500892907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F680FAB26789A8500892907 /* Assets.xcassets */; };
+		8F680FBD2678A0DA00892907 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F680FBC2678A0DA00892907 /* Task.swift */; };
+		8F680FBF2678A65F00892907 /* TaskRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F680FBE2678A65F00892907 /* TaskRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		8F680FAB26789A8500892907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F680FAD26789A8500892907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F680FAE26789A8500892907 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8F680FBC2678A0DA00892907 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8F680FBE2678A65F00892907 /* TaskRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				8F680FA326789A8500892907 /* InterfaceController.swift */,
+				8F680FBC2678A0DA00892907 /* Task.swift */,
+				8F680FBE2678A65F00892907 /* TaskRowController.swift */,
 				8F680FA526789A8500892907 /* ExtensionDelegate.swift */,
 				8F680FA726789A8500892907 /* NotificationController.swift */,
 				8F680FA926789A8500892907 /* ComplicationController.swift */,
@@ -308,8 +314,10 @@
 			files = (
 				8F680FA826789A8500892907 /* NotificationController.swift in Sources */,
 				8F680FAA26789A8500892907 /* ComplicationController.swift in Sources */,
+				8F680FBD2678A0DA00892907 /* Task.swift in Sources */,
 				8F680FA626789A8500892907 /* ExtensionDelegate.swift in Sources */,
 				8F680FA426789A8500892907 /* InterfaceController.swift in Sources */,
+				8F680FBF2678A65F00892907 /* TaskRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

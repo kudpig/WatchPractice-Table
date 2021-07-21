@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchPractice2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="cVd-ft-tXc">
+                            <items>
+                                <tableRow identifier="TaskRowController" id="iBQ-bd-8Sd" customClass="TaskRowController" customModule="WatchPractice2_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="2DQ-22-2cj">
+                                        <items>
+                                            <imageView width="25" height="25" alignment="right" verticalAlignment="center" image="folder" catalog="system" id="aMj-wI-buV" userLabel="Image View"/>
+                                            <group width="136" alignment="left" layout="vertical" id="Frf-j4-EHr">
+                                                <items>
+                                                    <label alignment="left" text="Time" id="R3M-1B-zft"/>
+                                                    <label alignment="left" text="Name" id="Pqx-gK-Lgn"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imageViewTask" destination="aMj-wI-buV" id="rrz-gE-ffo"/>
+                                        <outlet property="labelFinishedTime" destination="R3M-1B-zft" id="1wC-2z-n83"/>
+                                        <outlet property="labelTaskName" destination="Pqx-gK-Lgn" id="DVV-DD-Hl0"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="cVd-ft-tXc" id="vAq-ec-Yth"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="49" y="45"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,16 +61,19 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchPractice2_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WatchPractice2_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+    </resources>
 </document>
